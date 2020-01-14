@@ -105,6 +105,9 @@ export default class EmojiCanvas extends Vue {
         // reset scale
         this.ctx.setTransform(1, 0, 0, 1, 0, 0)
       }
+    },
+    () => {
+      console.log("[FontFaceObserver] timeout: abort to load a font \'" + this.family + "\'")
     })
   }
 
