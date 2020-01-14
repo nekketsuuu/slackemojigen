@@ -96,7 +96,8 @@ module.exports = {
     postcss: {
       plugins: {
         'tailwindcss': './tailwind.js',
-        'autoprefixer': {}
+        'autoprefixer': {},
+        'postcss-each': {}
       }
     }
   }
