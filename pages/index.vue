@@ -1,5 +1,10 @@
 <template>
-  <section class="flex flex-row m-4 mt-8">
+  <section
+    class="flex flex-row m-4 mt-8"
+    :style="{
+      'background-color': backgroundColorPicker.hex8
+    }"
+  >
     <div class="emoji-controller">
       <div>
         <h2 class="text-lg mb-2">
@@ -50,6 +55,26 @@
         </no-ssr>
       </div>
 
+      <div class="mt-2">
+        <h2 class="text-lg mb-2">
+          Background
+        </h2>
+        <button
+          class="bg-white hover:bg-grey-lightest text-grey-darkest text-sm m-1 py-1 px-4 border border-grey-light rounded-lg shadow"
+          :style="{
+            minWidth: '64px'
+          }"
+          @click="setBackgroundDark()"
+        >Dark</button>
+        <button
+          class="bg-white hover:bg-grey-lightest text-grey-darkest text-sm m-1 py-1 px-4 border border-grey-light rounded-lg shadow"
+          :style="{
+            minWidth: '64px'
+          }"
+          @click="setBackgroundLight()"
+        >Light</button>
+      </div>
+
       <div class="mt-4">
         <nuxt-link to="/help" class="no-underline">
           <h2 class="text-lg mb-2 text-blue-dark">
@@ -89,6 +114,7 @@ export default {
       weight: '600',
       weights: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
       colorPicker: { hex8: '#CF375CFF' },
+      backgroundColorPicker: { hex8: '#36393FFF' },
       fontFamilies: [
         'M PLUS 1p',
         'M PLUS Rounded 1c',
@@ -158,6 +184,12 @@ export default {
   methods: {
     setWeight(value) {
       this.weight = value
+    },
+    setBackgroundDark() {
+      this.backgroundColorPicker.hex8 = '#36393FFF'
+    },
+    setBackgroundLight() {
+      this.backgroundColorPicker.hex8 = '#FFFFFFFF'
     },
     onClickPreset(preset) {
       this.text = preset.text

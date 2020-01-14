@@ -26,16 +26,16 @@
         :family="family"
         :color="color"
         :weight="weight"
-        :view-size="40"
+        :view-size="32"
       />
       <emoji-canvas
-        class="s16 mx-1"
+        class="s22 mx-1"
         :text="text"
         :size="calculatedSize"
         :family="family"
         :color="color"
         :weight="weight"
-        :view-size="20"
+        :view-size="22"
       />
     </div>
   </div>
@@ -79,13 +79,13 @@ export default class EmojiView extends Vue {
   width: 280px;
 }
 
-.s64 {
+.s128 {
   margin-bottom: 1px;
 }
 .s32 {
-  margin-bottom: 3px;
+  margin-bottom: 1px;
 }
-.s16 {
-  margin-bottom: 5px;
+.s22 {
+  margin-bottom: 1px;
 }
 </style>

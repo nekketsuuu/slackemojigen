@@ -5,7 +5,7 @@
     :style="{
       width: viewSize + 'px',
       height: viewSize + 'px',
-      backgroundColor: 'white',
+      backgroundColor: 'transparent',
       fontKerning: 'normal',
       textRendering: 'optimizeLegibility'
     }"
