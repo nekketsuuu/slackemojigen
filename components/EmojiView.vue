@@ -1,10 +1,14 @@
 <template>
-  <div class="wrapper mb-3 border-gray-lighter border-t border-solid p-2">
+  <div
+    class="wrapper mb-3 border-t border-solid p-2"
+    :class="isDark ? 'border-black' : 'border-gray-lighter'"
+  >
     <div class="emoji-view-header flex justify-between">
       <span class="font-name">{{ family }}</span>
       <fa
         icon="download"
-        class="text-black cursor-pointer"
+        class="cursor-pointer"
+        :class="isDark ? 'text-white' : 'text-black'"
         @click="onClickDownload"
       />
     </div>
@@ -60,6 +64,9 @@ export default class EmojiView extends Vue {
 
   @Prop({ type: String })
   weight!: string
+
+  @Prop({ type: Boolean })
+  isDark!: boolean
 
   onClickDownload() {
     ;(this.$refs.canvas as EmojiCanvas).download()

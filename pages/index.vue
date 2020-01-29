@@ -1,13 +1,14 @@
 <template>
   <section
     class="flex flex-row m-4 mt-8"
+    :class="isDark ? 'text-white' : 'text-black'"
     :style="{
-      'background-color': backgroundColorPicker.hex8
+      'background-color': (isDark ? '#36393F' : '#FFFFFF')
     }"
   >
     <div class="emoji-controller">
       <div>
-        <h2 class="text-lg mb-2">
+        <h2 class="text-lg mg-2">
           Preset
         </h2>
         <preset-button
@@ -77,7 +78,10 @@
 
       <div class="mt-4">
         <nuxt-link to="/help" class="no-underline">
-          <h2 class="text-lg mb-2 text-blue-dark">
+          <h2
+            class="text-lg mb-2" 
+            :class="isDark ? 'text-blue-light' : 'text-blue-dark'"
+          >
             Help
           </h2>
         </nuxt-link>
@@ -90,6 +94,7 @@
           :family="family"
           :color="colorPicker.hex8"
           :weight="weight"
+          :isDark="isDark"
         />
       </div>
     </div>
@@ -114,7 +119,7 @@ export default {
       weight: '600',
       weights: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
       colorPicker: { hex8: '#CF375CFF' },
-      backgroundColorPicker: { hex8: '#36393FFF' },
+      isDark: true,
       fontFamilies: [
         'M PLUS 1p',
         'M PLUS Rounded 1c',
@@ -186,10 +191,10 @@ export default {
       this.weight = value
     },
     setBackgroundDark() {
-      this.backgroundColorPicker.hex8 = '#36393FFF'
+      this.isDark = true
     },
     setBackgroundLight() {
-      this.backgroundColorPicker.hex8 = '#FFFFFFFF'
+      this.isDark = false
     },
     onClickPreset(preset) {
       this.text = preset.text
