@@ -32,7 +32,7 @@ jobs:
 
     - run: yarn build
 
-    - run: yarn generate
+    - run: yarn generate --fail-on-page-error
 
     - name: deploy
       uses: peaceiris/actions-gh-pages@v2
