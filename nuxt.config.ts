@@ -11,22 +11,12 @@ module.exports = {
    ** Headers of the page
    */
   head: {
-    title: 'Slack Emoji Generator - Slack絵文字ジェネレーター',
+    title: 'Discord Emoji Generator - Discord絵文字ジェネレーター',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { name: 'google-site-verification', content: 'A-wiGtauu1jdzkCZqiD7PceFsf5sciISBuT4Ctv98vc' },
-      { hid: 'description',
-        name: 'description',
-        content: 'Slack Emoji Generator はSlack用の絵文字を生成する無料ツールです。複数フォントで絵文字を比べることができます。オリジナルの絵文字を作ってみましょう。'
-      },
-      { name: 'keywords', content: '絵文字,Emoji,emoji,えもじ,Slack,生成,メーカー,ジェネレーター,ツール,Slack Emoji Generator,slackemojigen,絵文字ジェネレーター'},
-      { name: 'twitter:card', content: 'summary' },
-      { name: 'og:title', content: 'Slack Emoji Generator' },
-      { name: 'og:description', content: 'Blazing fast emoji generator for Slack' },
-      { name: 'og:image', content: 'https://slackemojigen.com/ogp.png' }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/slackemojigen/favicon.ico' }]
   },
 
   webfontloader: {
