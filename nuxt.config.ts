@@ -3,6 +3,10 @@ const pkg = require('./package')
 module.exports = {
   mode: 'spa',
 
+  router: {
+    base: '/slackemojigen/'
+  },
+
   /*
    ** Headers of the page
    */
