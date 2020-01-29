@@ -1,3 +1,7 @@
+# Local fonts for custom
+*.ttf
+*.otf
+
 # Created by .ignore support plugin (hsz.mobi)
 ### Node template
 # Logs
