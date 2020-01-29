@@ -123,16 +123,20 @@ export default {
       fontFamilies: [
         'M PLUS 1p',
         'M PLUS Rounded 1c',
+        'Nico Moji',
         'Noto Sans JP',
         'Noto Sans SC',
         'Noto Sans TC',
         'Noto Serif JP',
         'Noto Serif SC',
         'Noto Serif TC',
+        'Nikukyu',
         'Kosugi',
         'Kosugi Maru',
         'Sawarabi Gothic',
-        'Sawarabi Mincho'
+        'Sawarabi Mincho',
+        'Hannari',
+        'Kokoro'
       ],
       presets: [
         {

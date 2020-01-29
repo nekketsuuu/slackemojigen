@@ -36,6 +36,20 @@ module.exports = {
         'Sawarabi+Gothic',
         'Sawarabi+Mincho',
       ]
+    },
+    custom: {
+      families: [
+        'Nico Moji',
+        'Nikukyu',
+        'Hannnari',
+        'Kokoro'
+      ],
+      urls: [
+        'https://fonts.googleapis.com/earlyaccess/nicomoji.css',
+        'https://fonts.googleapis.com/earlyaccess/nikukyu.css',
+        'https://fonts.googleapis.com/earlyaccess/hannari.css',
+        'https://fonts.googleapis.com/earlyaccess/kokoro.css'
+      ]
     }
   },
   /*
