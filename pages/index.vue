@@ -121,22 +121,22 @@ export default {
       colorPicker: { hex8: '#CF375CFF' },
       isDark: true,
       fontFamilies: [
-        'M PLUS 1p',
         'M PLUS Rounded 1c',
         'Nico Moji',
         'Noto Sans JP',
-        'Noto Sans SC',
-        'Noto Sans TC',
         'Noto Serif JP',
-        'Noto Serif SC',
-        'Noto Serif TC',
         'Nikukyu',
+        'Sawarabi Mincho',
+        'Hannari',
+        'Kokoro',
+        'M PLUS 1p',
         'Kosugi',
         'Kosugi Maru',
         'Sawarabi Gothic',
-        'Sawarabi Mincho',
-        'Hannari',
-        'Kokoro'
+        'Noto Sans SC',
+        'Noto Sans TC',
+        'Noto Serif SC',
+        'Noto Serif TC'
       ],
       presets: [
         {
