@@ -4,21 +4,6 @@
       <h1 class="text-5xl">
         Discord Emoji Generator
       </h1>
-      <div class="m-3 mt-4">
-        <a
-          href="https://twitter.com/share?ref_src=twsrc%5Etfw"
-          class="twitter-share-button"
-          data-text="Slack Emoji Generator"
-          data-hashtags="slackemojigen"
-          data-lang="en"
-          data-show-count="false"
-          >Tweet</a
-        ><script
-          async
-          src="https://platform.twitter.com/widgets.js"
-          charset="utf-8"
-        />
-      </div>
     </nav>
     <nuxt />
   </div>
