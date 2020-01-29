@@ -30,8 +30,6 @@ jobs:
 
     - run: yarn install
 
-    - run: yarn build
-
     - run: yarn generate --fail-on-page-error
 
     - name: deploy
